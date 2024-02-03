@@ -1,0 +1,18 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: OfferMS
+
+  cloud:
+    #consul config
+    consul:
+      discovery:
+        hostname: localhost
+      config:
+        enabled: true
+        prefix: config
+        defaultContext: application
+        profileSeparator: '::'
+        format: YAML

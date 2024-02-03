@@ -1,0 +1,18 @@
+#server:
+#  port: 9002
+
+spring:
+  application:
+    name: WalletMS
+
+  cloud:
+    #consul config
+    consul:
+      discovery:
+        hostname: localhost
+      config:
+        enabled: true
+        prefix: config
+        defaultContext: application
+        profileSeparator: '::'
+        format: YAML
